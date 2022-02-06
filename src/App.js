@@ -1,15 +1,18 @@
-import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import { NavBar } from "./components/NavBar/NavBar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 
-  return (
-    <div>
-      <NavBar/> 
-      <ItemListContainer greeting='Bienvenido al mejor alquiler de autos exóticos y de lujo'/> 
-    </div>
-  );
+    return (
+        <>
+          <NavBar/>
+          <div className="letrasNegras">
+          <ItemListContainer/>
+          </div>
+        </>
+    );
 }
 
 export default App;
-
