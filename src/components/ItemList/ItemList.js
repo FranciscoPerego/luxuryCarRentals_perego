@@ -6,9 +6,10 @@ export const ItemList = ( {productos} ) => {
 
     return (
         <Contenedor>    
-            <h2 className="colorGris">PEREGO</h2>   
+            <h2>WELCOME</h2> 
             <hr/>
-            <div className="row">
+        
+            <div className="row wrapper">
                 { productos.map( (el) => <Item key={el.id} {...el}/> )}
             </div> 
         </Contenedor>

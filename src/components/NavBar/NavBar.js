@@ -3,7 +3,7 @@ export const NavBar = () => {
   return (
       <nav className="navBar navBar-expand-lg navBar-light fixed-top" id="mainNav">
       <div className="container px-4 px-lg-5">
-      <a className="navBar-brand" href="#page-top">LUXURY CAR RENTALS</a>
+      <a className="navBar-brand" href="#page-top"> PEREGO LUXURY CAR RENTALS</a>
         <button className="navBar-toggler navBar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navBarResponsive" aria-controls="navBarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i className="fas fa-bars" />
