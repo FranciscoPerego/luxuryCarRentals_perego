@@ -1,4 +1,4 @@
-import { Contenedor } from "../../ejemplos/Contenedor"
+import { Contenedor } from "../../Contenedor/Contenedor"
 import { Item } from "../Item/Item"
 
 

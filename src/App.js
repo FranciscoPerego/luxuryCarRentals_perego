@@ -10,6 +10,7 @@ function App() {
     return (
         <>
           <NavBar/>
+
           <div className="letrasNegras margenSuperior">
           <ItemListContainer/>
           </div>
