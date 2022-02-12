@@ -12,7 +12,7 @@ function App() {
     return (
           <BrowserRouter>
              <NavBar/>
-         
+             <div className="linea margenSuperior2"></div>
              <Routes>
                 <Route path="/" element={<div className="letrasNegras margenSuperior"><ItemListContainer/></div>} />
                 <Route path="/tiposdeautos/:catId" element={<div className="letrasNegras margenSuperior"><ItemListContainer/></div>} />
