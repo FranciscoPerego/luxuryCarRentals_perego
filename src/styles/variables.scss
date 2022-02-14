@@ -20,7 +20,7 @@ $color-principal: rgb(79, 116, 238);
 
   img {
     margin-top: 5px;
-    width: 30%;
+    width: 40%;
   }
 
   .margenSuperior {
@@ -33,4 +33,16 @@ $color-principal: rgb(79, 116, 238);
 
   .margenSuperior3 {
     margin-top: 30px;
+  }
+
+  .margenSuperior4 {
+    margin-top: 15px;
+  }
+
+  .centrar {
+    text-align: center;
+  }
+
+  .letrasRojas {
+    color: red
   }
