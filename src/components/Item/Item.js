@@ -14,7 +14,7 @@ export const Item = ( {id, nombre, precio, img} ) => {
                   <div className="letrasNegras"> Precio por dia: US${precio}</div> 
                 </Card.Text>
                 <Link to={`/detail/${id}`}> 
-                <Button variant="danger">RESERVAR</Button>
+                <Button variant="danger">VER MAS</Button>
                 </Link>  
             </Card.Body>
         </Card>
