@@ -1,4 +1,4 @@
-
+import { ItemCount } from "../ItemCount/ItemCount"
 
 
 export const ItemDetail = ( {nombre, id , precio, img , stock , categoria, descripcion}) =>{
@@ -8,6 +8,8 @@ export const ItemDetail = ( {nombre, id , precio, img , stock , categoria, descr
         <img src={img} alt={nombre}/>
         <p className="margenSuperior4">{descripcion}</p>
         <h4 className="letrasRojas">Precio:US${precio}</h4>
+
+        <ItemCount max={stock} min={1}/>
     </div>
   )
 }
