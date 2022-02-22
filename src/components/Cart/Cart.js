@@ -2,19 +2,20 @@ import { useContext } from "react"
 import { CartContext } from "../../Context/CartContext"
 import {BsTrash} from 'react-icons/bs'
 
+
+
 export const Cart = () => {
 
     const {cart, totalCart, vaciarCart, eliminarItem} = useContext(CartContext)
 
 return (
-    <div className="cointainer my-2">
+    <div className="cointainer my-2 centrar">
         <h3>¿Desea confirmar las siguientes reservas?</h3>
-        <div className="linea"></div>
         {
            cart.map((item) => (
                <div key={item.id}>
                  <h4>{item.nombre}</h4>  
-                 <p>Cantidad: {item.cantidad}</p>
+                 <p>Cantidad de dias: {item.cantidad}</p>
                  <p>Precio: US${item.cantidad * item.precio}</p>
                  <button className="btn btn-danger" onClick={() => eliminarItem(item.id)}>
                   <BsTrash/>
