@@ -10,7 +10,7 @@ export const ItemListContainer = () => {
 
     const { catId } = useParams ()
 
-    console.log(catId)
+    
 
 
     useEffect( () => {
@@ -26,7 +26,7 @@ export const ItemListContainer = () => {
             }
             })
             .catch((err) => {
-                console.log(err)
+                
             })
             .finally(() => {
                setLoading(false)

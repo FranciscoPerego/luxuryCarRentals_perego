@@ -11,9 +11,15 @@ const handleRestar = () => {
 
     return (
         <div>
-            <button className="btn btn-outline-danger" onClick={handleRestar}>-</button>
+            <button 
+            className={`btn ${counter === min ? 'btn-outline-warning' : 'btn-outline-danger '}`}
+            disabled={counter === min}
+            onClick={handleRestar}>-</button>
             <span className="mx-2">{counter}</span>
-            <button className="btn btn-danger" onClick={handleSumar}>+</button>
+            <button 
+            className={`btn ${counter === max ? 'btn-outline-warning' : 'btn-outline-danger '}`} 
+            disabled={counter === max}
+            onClick={handleSumar}>+</button>
         </div>
     )
 }
