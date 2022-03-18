@@ -9,7 +9,6 @@ export const Cart = () => {
 
     const {cart, totalCart, vaciarCart, eliminarItem} = useContext(CartContext)
     
-    //render si el cart esta vacio 
     if (cart.length === 0) {
         return <div className="container my-4 centrar">
                 <h2>Usted no ha realizado ninguna reserva</h2>

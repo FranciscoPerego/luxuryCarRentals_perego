@@ -1,29 +1,23 @@
 import {Link} from 'react-router-dom'
 import { CartWidget } from '../CartWidget/CartWidget'
-import './NavBar.css';
+import './NavBar.scss';
 
 
 
 export const NavBar = () => {
 
   return (
-      <nav className="navBar navBar-expand-lg navBar-light fixed-top" id="mainNav">
-      <div className="container px-4 px-lg-5">
-      <Link to='/' className="navBar-brand" href="#page-top"> PEREGO LUXURY CAR RENTALS</Link>
-        <button className="navBar-toggler navBar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navBarResponsive" aria-controls="navBarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i className="fas fa-bars" />
-        </button>
-        <div className="collapse navBar-collapse" id="navBarResponsive">
-          <ul className="navBar-nav ms-auto">
-            <li className="nav-item"><Link to='/' className="nav-link">Principal</Link></li>
-            <li className="nav-item"><Link to='/tiposdeautos/Deportivos' className="nav-link">Deportivos</Link></li>
-            <li className="nav-item"><Link to='/tiposdeautos/Lujosos' className="nav-link">Lujosos</Link></li>
-            <li className="nav-item"><Link to='/tiposdeautos/TodoTerreno' className="nav-link">Todo terreno</Link></li>
-          </ul>
-          <CartWidget className='margenSuperior'/>
-        </div>
-      </div>
-    </nav>
-  )
+    <header className="header">
+            <Link to='/' style={{color: 'gray'}}>
+                <h5>PEREGO LUXURY CAR RENTALS</h5>
+            </Link>
+            <nav className="header-nav">
+               <Link to='/' className="header-nav letrasGrises">Principal</Link>
+               <Link to='/tiposdeautos/Deportivos' className="header-nav letrasGrises">Deportivos</Link>
+               <Link to='/tiposdeautos/Lujosos' className="header-nav letrasGrises ">Lujosos</Link>
+               <Link to='/tiposdeautos/TodoTerreno' className="header-nav letrasGrises">Todo terreno</Link>
+                 <CartWidget/>
+           </nav>
+    </header>
+)
 }

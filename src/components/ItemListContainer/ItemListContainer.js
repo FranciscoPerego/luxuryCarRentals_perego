@@ -19,10 +19,10 @@ export const ItemListContainer = () => {
     useEffect( () => {
         setLoading(true)
 
-        //1
+        
         const productosRef = collection(db, "productos")
         const q = catId ? query ( productosRef, where("categoria", "==", catId)) : productosRef
-        //2
+    
         getDocs(q)
          .then((resp) => {
 
