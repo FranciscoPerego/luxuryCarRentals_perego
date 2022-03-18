@@ -35,7 +35,7 @@ return (
         <div className="linea"></div>
         <h2>Total: US${totalCart()}</h2>
         <div className="my-3">
-            <button className="btn btn-danger mx-4" >Confirmar pago</button>
+            <Link to='/Checkout' className="btn btn-danger mx-4" >Confirmar pago</Link>
             <button className="btn btn-danger" onClick={vaciarCart}>Cancelar</button>
             
         </div>

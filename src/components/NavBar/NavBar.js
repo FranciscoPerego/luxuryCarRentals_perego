@@ -14,10 +14,9 @@ export const NavBar = () => {
         <div className="collapse navBar-collapse" id="navBarResponsive">
           <ul className="navBar-nav ms-auto">
             <li className="nav-item"><Link to='/' className="nav-link">Principal</Link></li>
-            <li className="nav-item"><a className="nav-link">Servicios</a></li>
-            <li className="nav-item"><a className="nav-link">Marcas de autos</a></li>
             <li className="nav-item"><Link to='/tiposdeautos/Deportivos' className="nav-link">Deportivos</Link></li>
             <li className="nav-item"><Link to='/tiposdeautos/Lujosos' className="nav-link">Lujosos</Link></li>
+            <li className="nav-item"><Link to='/tiposdeautos/TodoTerreno' className="nav-link">Todo terreno</Link></li>
           </ul>
           <CartWidget className='margenSuperior'/>
         </div>

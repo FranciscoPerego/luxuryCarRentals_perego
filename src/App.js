@@ -5,8 +5,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './styles/variables.scss'
 import {BrowserRouter, Routes, Route , Navigate} from 'react-router-dom'
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
-import {CartContext, CartProvider} from './Context/CartContext'
+import {CartProvider} from './Context/CartContext'
 import { Cart } from "./components/Cart/Cart";
+import { Checkout } from "./components/Checkout/Checkout";
+import { Header } from "./components/Header/Header";
 
 
 function App() {
@@ -16,12 +18,14 @@ function App() {
             <BrowserRouter>
              <NavBar/>
              <div className="linea margenSuperior2"></div>
+             <Header/>
              <Routes>
                 <Route path="/" element={<div className="letrasNegras margenSuperior"><ItemListContainer/></div>} />
                 <Route path="/tiposdeautos/:catId" element={<div className="letrasNegras margenSuperior"><ItemListContainer/></div>} />
                 <Route path="/detail/:itemId" element={ <ItemDetailContainer/>} />
                 <Route path="*" element={<Navigate to={"/"}/>}/>
                 <Route path="/cart" element={ <Cart/> } />
+                <Route path="/Checkout" element={ <Checkout/> } />
              </Routes>
           </BrowserRouter>
           </CartProvider>
