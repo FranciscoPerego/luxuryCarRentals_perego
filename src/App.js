@@ -8,7 +8,8 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import {CartProvider} from './Context/CartContext'
 import { Cart } from "./components/Cart/Cart";
 import { Checkout } from "./components/Checkout/Checkout";
-import { Header } from "./components/Header/Header";
+
+
 
 
 function App() {
@@ -16,9 +17,8 @@ function App() {
     return (
             <CartProvider>
             <BrowserRouter>
-             <NavBar/>
-             <div className="linea margenSuperior2"></div>
-             <Header/>
+            <NavBar/>
+            <div className="linea margenSuperior2"></div>
              <Routes>
                 <Route path="/" element={<div className="letrasNegras margenSuperior"><ItemListContainer/></div>} />
                 <Route path="/tiposdeautos/:catId" element={<div className="letrasNegras margenSuperior"><ItemListContainer/></div>} />

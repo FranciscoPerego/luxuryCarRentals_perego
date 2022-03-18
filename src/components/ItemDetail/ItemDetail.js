@@ -23,7 +23,7 @@ export const ItemDetail = ( {nombre, id , precio, img , stock , categoria, descr
     }
 
 return (
-  <div className="centrar">
+  <div className="centrar letrasBlancas">
       <h3 className="margenSuperior3 subrayado">{nombre}</h3>
       <img src={img} alt={nombre} className='grid'/>
       <p className="margenSuperior4">{descripcion}</p>

@@ -72,9 +72,22 @@ if (outOfStock.length === 0) {
     const handleSubmit = (e) => {
         e.preventDefault()
 
+        if (values.nombre.lenghth < 3) {
+            alert('Nombre invalido. VERIFICAR.')
+            return
+        }
+        if(values.email.length < 7){
+            alert('El email ingresado es invalido')
+            return
+        }
+        if(values.tel.length < 7){
+            alert('El telefono ingresado es invalido')
+            return
+        }
+
        
     generarOrden()
-    
+
     }
 
    
