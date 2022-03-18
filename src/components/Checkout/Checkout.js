@@ -72,7 +72,7 @@ if (outOfStock.length === 0) {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (values.nombre.lenghth < 3) {
+        if (values.nombre.length < 3) {
             alert('Nombre invalido. VERIFICAR.')
             return
         }
